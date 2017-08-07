@@ -48,9 +48,9 @@ end
 post '/amount' do
 	cents = params[:cents]
 	name = params[:name]
-	coins = coin_sorter(cents.to_i)
+	session[:coins] = coin_sorter(cents.to_i)
     # "#{cents} #{name} #{coins}"
-    redirect '/results?name=' + name + '&cents='+ cents + '&coins='+ coins
+    redirect '/results?name=' + name + '&cents='+ cents 
 end
 
 get '/results' do
@@ -58,8 +58,8 @@ get '/results' do
 	cents_received = params[:cents]
     cents = params[:cents]
 	name = params[:name]
-	coins = params[:coins]
-	erb :results, locals: {name: name, cents_received: cents_received, coins: coins}
+	coins = session[:coins]
+	erb :results, locals: {name: name, cents_received: cents_received, coins: session[:coins]}
 end
 
 post '/results' do
