@@ -1,0 +1,7 @@
+<h1 class = "head_color font_space">Okay <%= name %>, you gave me <%= cents_received %></h1>
+<h2 class = "head_color font"> your change is <%=coins%> </h2>
+<form method = "post" action = "/results">
+	<input type="text" name = "name" value = <%= name %> hidden>
+	<input type="text" name = "cents_received" value = <%= cents_received %> hidden>
+	<input type= "text" name = "coins" value = <%=coins%> hidden> 
+</form>

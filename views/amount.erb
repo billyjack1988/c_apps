@@ -1,0 +1,7 @@
+<h1 class = "head_color font_size"> <%= name.upcase %>. How much change are you giving me? </h1>
+
+<form method = "post" action = "/amount">
+	<p class = "head_color font"> change <input type = "number" name = "cents"> </p>
+	<input type="text" name = "name" value = <%= name %> hidden>
+	<input type = "submit">
+</form>
