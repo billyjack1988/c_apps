@@ -42,7 +42,7 @@ end
 
 get '/amount' do
 	name = params[:users_name]
-	erb :amount, :locals => {:name => name}
+	erb :amount, locals: {name: name}
 end
 
 post '/amount' do
@@ -59,7 +59,7 @@ get '/results' do
     cents = params[:cents]
 	name = params[:name]
 	coins = params[:coins]
-	erb :results, locals:{name: name, cents_received: cents_received, coins: coins}
+	erb :results, locals: {name: name, cents_received: cents_received, coins: coins}
 end
 
 post '/results' do
