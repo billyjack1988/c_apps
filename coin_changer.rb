@@ -10,7 +10,7 @@ def coin_sorter(cents_received)
 	end
 	woop = ""
 	coins.each do |coin,value|
-		woop << "#{value} #{coin}"
+		woop << "#{value} #{coin}, "
 	end
 	"#{woop}"  
 
