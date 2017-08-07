@@ -8,7 +8,12 @@ def coin_sorter(cents_received)
 		end
 		cents_received = cents_received % amount
 	end
-	coins.to_a.flatten.join(" ")
+	woop = ""
+	coins.each do |coin,value|
+		woop << "#{value} #{coin}"
+	end
+	"#{woop}"  
+
 end
 
 
