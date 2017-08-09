@@ -1,7 +1,21 @@
 <h1 class = "head_color font_size"> <%= name.upcase %>. How much change are you giving me? </h1>
 
+
+<script>
+	var d = new Date();
+
+function myFunc(){
+	alert(d);
+	document.getElementById("pizza").value = d;
+
+}
+</script>
+
+
+
 <form method = "post" action = "/amount">
-	<p class = "head_color font"> change <input type = "number" name = "cents"> </p>
-	<input type="text" name = "name" value = <%= name %> hidden>
-	<input type = "submit">
+	<p class = "head_color font"> change <input type = "number" name = "cents" required> </p>
+	<input type="text" name = "name" value = <%=name%> hidden>
+	<input type = "submit" onclick= "myFunc()"> 
+	<input type ="hidden" name ="date_time" id ="pizza"> 
 </form>

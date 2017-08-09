@@ -1,4 +1,9 @@
 
+
+
+
+
+
 def coin_sorter(cents_received)
 	coins = {}
 	coin_changer = {quarter: 25, dime: 10, nickel: 5, penny: 1}
@@ -10,11 +15,13 @@ def coin_sorter(cents_received)
 	end
 	woop = ""
 	coins.each do |coin,value|
-		woop << "#{value} #{coin}, "
+		woop << "#{value} #{coin}\n"
 	end
 	"#{woop}"  
 
 end
+
+
 
 
 

@@ -1,7 +1,39 @@
-<h1 class = "head_color font_space">Okay <%= name %>, you gave me <%= cents_received %></h1>
-<h2 class = "head_color font"> your change is <%=coins%> </h2>
+<h1 id="yup" class = "head_color font_size">Okay <%= name %>, you gave me <%= cents_received %></h1>
+<h2 class = "head_color font"> your change is <%=coins%>. </h2>
+<h3> <%=date%> </h3>
+<script>
+		var image = ['/images/ice.jpg', '/images/die.png', '/images/avatar.jpg', '/images/mount.jpg', '/images/rain.gif']
+		var randomimage =  Math.floor(Math.random() * image.length);
+	  	document.body.style.backgroundImage = 'url(' + image[randomimage] + ')';
+</script>
+
+
+<script>
+document.getElementById("yup").onmouseover = function() {mouseOver()};
+document.getElementById("yup").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+    document.getElementById("yup").style.color = "yellow";
+}
+
+function mouseOut() {
+    document.getElementById("yup").style.color = "black";
+}
+</script>
+
+<body>
+
+
 <form method = "post" action = "/results">
 	<input type="text" name = "name" value = <%= name %> hidden>
 	<input type="text" name = "cents_received" value = <%= cents_received %> hidden>
-	<input type= "text" name = "coins" value = <%=coins%> hidden> 
+	<input type= "text" name = "coins" value = <%=coins%> hidden>
 </form>
+
+</body>
+
+
+
+
+
+
