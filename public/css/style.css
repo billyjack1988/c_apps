@@ -1,18 +1,21 @@
-.head_color{
-color:black
+.head_color {
+    color: black
 }
-.font_size{
+
+.font_size {
     font-size: 400%
 }
-.font{
+
+.font {
     font-size: 300%
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color ;
+    background-color: none;
 }
 
 li {
@@ -23,15 +26,16 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding:  16rex;
+    padding: 16rex;
     text-decoration: none;
 }
 
 li a:hover {
     background-color: red;
 }
-body{
-        background-image: url("https://media.giphy.com/media/dD5ARBMyZXPB6/source.gif")
-        ;background-repeat: no-repeat
-        ;background-size: cover
+
+body {
+    background-image: url("/images/backface.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

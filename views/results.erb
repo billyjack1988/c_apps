@@ -2,23 +2,21 @@
 <h2 class = "head_color font"> your change is <%=coins%>. </h2>
 <h3> <%=date%> </h3>
 <script>
-		var image = ['/images/ice.jpg', '/images/die.png', '/images/avatar.jpg', '/images/mount.jpg', '/images/rain.gif', '/images/hip.gif', '/images/gang.gif', '/images/fry.gif' ]
-		var randomimage =  Math.floor(Math.random() * image.length);
-	  	document.body.style.backgroundImage = 'url(' + image[randomimage] + ')';
-</script>
+	var image = ['/images/ice.jpg', '/images/die.png', '/images/avatar.jpg', '/images/mount.jpg', '/images/rain.gif', '/images/hip.gif', '/images/gang.gif', '/images/fry.gif' ]
+	var randomimage =  Math.floor(Math.random() * image.length);
+	document.body.style.backgroundImage = 'url(' + image[randomimage] + ')';
 
 
-<script>
-document.getElementById("yup").onmouseover = function() {mouseOver()};
-document.getElementById("yup").onmouseout = function() {mouseOut()};
+	document.getElementById("yup").onmouseover = function() {mouseOver()};
+	document.getElementById("yup").onmouseout = function() {mouseOut()};
 
-function mouseOver() {
+	function mouseOver() {
     document.getElementById("yup").style.color = "yellow";
-}
+		}
 
-function mouseOut() {
+	function mouseOut() {
     document.getElementById("yup").style.color = "black";
-}
+		}
 </script>
 
 <body>
